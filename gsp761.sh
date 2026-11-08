@@ -312,5 +312,12 @@ SERVICE_URL=$(gcloud run services describe rest-api --region "$REGION" --format=
 for p in /v1/ /v1/customer/22530 /v1/customer/34216 /v1/customer/70156 /v1/customer/12345; do
   echo -e "${CYAN}== $p${RESET}"; curl -s "$SERVICE_URL$p"; echo
 done
-ok "Selesai. Service URL: $SERVICE_URL"
-echo -e "${CYAN}Credit: Jutapen${RESET}"
+echo
+echo -e "${GREEN}==========================================${RESET}"
+echo -e "${GREEN}   LAB GSP761 SELESAI!${RESET}"
+echo -e "${CYAN}   Service URL : $SERVICE_URL${RESET}"
+echo -e "${GREEN}==========================================${RESET}"
+echo -e "${YELLOW}   Jangan lupa mampir ke GitHub saya:${RESET}"
+echo -e "${CYAN}   https://github.com/Jutapen${RESET}"
+echo -e "${CYAN}   Credit: Jutapen${RESET}"
+echo
